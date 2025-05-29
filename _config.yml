@@ -28,7 +28,7 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 github_username:  azamani7tsix
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
