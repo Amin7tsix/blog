@@ -32,10 +32,11 @@ twitter_username: jekyllrb
 github_username:  azamani7tsix
 
 # Build settings
-# theme: minima
+theme: minima
+
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
+  # - jekyll-seo-tag
 
 markdown: kramdown
 
