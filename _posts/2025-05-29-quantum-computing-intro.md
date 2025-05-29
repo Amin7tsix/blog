@@ -10,14 +10,16 @@ thumbnail: /assets/images/superconducting_quantum_computer.jpeg
 </p>
 
 
-<div class="video-container">
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/RQWpF2Gb-gU" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-    </iframe>
+<div class="video-container-wrapper">
+    <div class="video-container">
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/RQWpF2Gb-gU" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </div>
 
 <p style="text-align: right;">

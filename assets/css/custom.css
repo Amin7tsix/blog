@@ -116,13 +116,19 @@
     text-align: right;     /* Align user input to the right */
   }
 
+  .video-container-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+  }
+  
   .video-container {
-    text-align:center;
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 ratio */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
+    width: 100%;
+    max-width: 560px; /* Optional max width */
     overflow: hidden;
-    max-width: 100%;
   }
   
   .video-container iframe {
@@ -132,3 +138,37 @@
     width: 100%;
     height: 100%;
   }  
+
+
+  .post-preview {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5em;
+  }
+  
+  .post-image {
+    width: 120px;
+    height: auto;
+    margin-right: 1em;
+    object-fit: cover;
+  }
+  
+  /* Responsive fix */
+  @media (max-width: 600px) {
+    .post-preview {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .post-image {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 1em auto;
+    }
+  
+    .post-text {
+      width: 100%;
+    }
+  }
+  

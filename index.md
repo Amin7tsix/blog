@@ -19,5 +19,14 @@ title: Home
         <p style="text-align: right;">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
       </div>
     </div>
+    <!-- <div class="post-preview">
+      {% if post.thumbnail %}
+        <img src="{{ post.image }}" alt="post image" class="post-image">
+      {% endif %}
+      <div class="post-text">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p>{{ post.excerpt }}</p>
+      </div>
+    </div> -->
   {% endfor %}
 </div>
