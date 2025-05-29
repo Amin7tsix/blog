@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Quantum computing blog"
+title:  "Welcome to jekyll!"
 date:   2025-05-27 13:38:05 +0200
 categories: jekyll update
 ---
