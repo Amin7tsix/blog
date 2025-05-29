@@ -34,6 +34,15 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+# Tell Jekyll to use the default layout by default (optional)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+
 markdown: kramdown
 
 include:
