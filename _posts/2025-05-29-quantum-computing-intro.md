@@ -10,7 +10,7 @@ thumbnail: /assets/images/superconducting_quantum_computer.jpeg
 </p>
 
 
-<div style="text-align:center;">
+<div class="video-container">
     <iframe width="560" height="315" 
         src="https://www.youtube.com/embed/RQWpF2Gb-gU" 
         title="YouTube video player" 
