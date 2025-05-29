@@ -16,12 +16,20 @@
   }
 
   header h1 a {
-    color: #444468; /* Replace with your desired color code */
+    color: #2e6b8a; /* Replace with your desired color code */
     text-decoration: none; /* Optional: remove underline */
   }
 
   body {
-    background-color: #efe7d0;
+    background-color: #ffffff;
+  }
+
+  .site-description {
+    font-size: 12px;
+    color: #15455d;
+    margin-top: -10px;
+    text-align: right;
+    font-weight: 200;
   }
 
   .post-title {
@@ -79,12 +87,13 @@
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
+    font-size: 14px;
   }
   
   .menu li a {
     text-decoration: none;
-    color: #0366d6;
-    font-weight: 600;
+    color: #1f7a7b;
+    font-weight: 300;
   }
   
   .menu li a:hover {
