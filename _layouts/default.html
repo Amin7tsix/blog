@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,13 +8,35 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
+
+
 <body>
   <div class="wrapper">
-    <header>
+    <!-- <header>
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <p>{{ site.description }}</p>
+      <p style="text-align: right;">{{ site.description }}</p>
       <hr>
+    </header> -->
+
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="{{ '/contact' | relative_url }}">تماس با ما</a></li>
+          <li><a href="{{ '/about' | relative_url }}">درباره</a></li>
+          <li><a href="{{ '/' | relative_url }}">نوشته‌ها</a></li>
+        </ul>
+      </nav>
+    
+      <hr />
+
+      <h1 style="text-align: right;"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+      <p style="text-align: right;">{{ site.description }}</p>
+      
+      <hr />
+      
     </header>
+    
+    
 
     <main>
       {{ content }}

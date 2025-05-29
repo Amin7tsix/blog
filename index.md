@@ -6,12 +6,18 @@ layout: default
 title: Home
 ---
 
-<h1>Welcome to My Blog</h1>
+<h1 style="text-align: right;">نوشته‌ها</h1>
 
-<ul>
+<div class="post-list">
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
-    </li>
+    <div class="post-preview">
+      {% if post.thumbnail %}
+        <img src="{{ post.thumbnail | relative_url }}" alt="Thumbnail for {{ post.title }}">
+      {% endif %}
+      <div class="post-content">
+        <h2 style="text-align: right;"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p style="text-align: right;">{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      </div>
+    </div>
   {% endfor %}
-</ul>
+</div>

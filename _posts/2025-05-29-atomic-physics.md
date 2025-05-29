@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to jekyll!"
+title:  "مقدمه‌ای بر فیزیک اتمی"
 date:   2025-05-27 13:38:05 +0200
 ---
 
