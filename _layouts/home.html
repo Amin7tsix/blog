@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section class="home-intro">
+  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  {% if site.description %}
+  <p class="site-description">{{ site.description }}</p>
+  {% endif %}
+</section>
+
+<section class="posts-list">
+  {% for post in site.posts %}
+  <article class="post-item">
+    <h2>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+    <time datetime="{{ post.date | date_to_xmlschema }}">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </time>
+    {% if post.excerpt %}
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    {% endif %}
+  </article>
+  <hr>
+  {% endfor %}
+</section>
