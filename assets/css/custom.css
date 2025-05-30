@@ -102,7 +102,7 @@
   
   .form-container {
     display: flex;
-    justify-content: flex-end; /* Align container to the right */
+    justify-content: flex; /* Align container to the right */
     padding: 2rem;
   }
 
