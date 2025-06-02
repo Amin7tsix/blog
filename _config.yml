@@ -45,6 +45,13 @@ defaults:
 
 markdown: kramdown
 
+kramdown:
+  math_engine: mathjax
+  math_engine_opts:
+    preview: true
+  parse_block_html: true
+
+
 include:
   - style.css
 
