@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 <article>
   <h2 class="post-title">{{ page.title }}</h2>
   <p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
